@@ -1,0 +1,354 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | SCARLETÉ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="nav-wrap">
+        <a href="index.html" class="brand">SCARLETÉ</a>
+
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            <i data-lucide="menu"></i>
+        </button>
+
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="collection.html">Collection</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+
+        <div class="nav-tools">
+            <button aria-label="Search"><i data-lucide="search"></i></button>
+            <button aria-label="Wishlist"><i data-lucide="heart"></i></button>
+            <button class="cart-button" aria-label="Shopping bag">
+                <i data-lucide="shopping-bag"></i>
+                <span class="cart-count">0</span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<section class="contact-hero">
+    <div class="container contact-hero-inner">
+        <div>
+            <span class="eyebrow">CLIENT SERVICES & ATELIERS</span>
+            <h1>Let's Start a <em>Conversation.</em></h1>
+            <p>Whether inquiring about bespoke leather commissions, styling appointments or order assistance, our dedicated team is here to help.</p>
+        </div>
+
+        <div class="atelier-hours">
+            <i data-lucide="clock"></i>
+            <div>
+                <span>ATELIER HOURS</span>
+                <h3>Monday – Saturday</h3>
+                <p>09:00 – 20:00</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<main class="contact-main">
+    <div class="container contact-layout">
+
+        <div class="contact-information">
+
+            <section class="contact-direct">
+                <div class="contact-heading">
+                    <h2><i data-lucide="headset"></i> Contact Our Team</h2>
+                    <span class="eyebrow">GET IN TOUCH</span>
+                </div>
+
+                <div class="direct-details">
+                    <div>
+                        <span>E-MAIL US</span>
+                        <a href="mailto:scarlete@gmail.com">scarlete@gmail.com</a>
+                    </div>
+                    <div>
+                        <span>CALL US</span>
+                        <a href="tel:+10000000000">+1 (000) 000 0000</a>
+                        <small>Monday – Saturday</small>
+                    </div>
+                </div>
+
+                <div class="live-room">
+                    <i data-lucide="message-circle"></i>
+                    <div>
+                        <strong>PERSONALIZED ASSISTANCE</strong>
+                        <small>Our client advisors are available for assistance.</small>
+                    </div>
+                    <a href="mailto:scarlete@gmail.com">CONNECT</a>
+                </div>
+            </section>
+
+            <section class="boutique-section">
+                <div class="contact-heading">
+                    <h2>Our Boutique Experience</h2>
+                    <span class="eyebrow">PRIVATE APPOINTMENTS</span>
+                </div>
+
+                <div class="boutique-grid">
+                    <article class="boutique-card">
+                        <img src="assets/boutique2.jpg">
+                        <span class="eyebrow">FLAGSHIP ATELIER</span>
+                        <h3>Our Flagship</h3>
+                        <p>Experience our signature collection in person.</p>
+                        <a href="mailto:scarlete@gmail.com">BOOK A VISIT →</a>
+                    </article>
+
+                    <article class="boutique-card">
+                        <img src="assets/boutique1.jpg">
+                        <span class="eyebrow">PRIVATE SALON</span>
+                        <h3>Personal Styling</h3>
+                        <p>Discover silhouettes selected around your style.</p>
+                        <a href="mailto:scarlete@gmail.com">BOOK A VISIT →</a>
+                    </article>
+
+                    <article class="boutique-card">
+                        <img src="assets/boutique3.jpg">
+                        <span class="eyebrow">THE SHOWROOM</span>
+                        <h3>Explore the Atelier</h3>
+                        <p>Discover the details behind every creation.</p>
+                        <a href="mailto:scarlete@gmail.com">BOOK A VISIT →</a>
+                    </article>
+                </div>
+            </section>
+
+            <section class="bespoke-note">
+                <i data-lucide="gem"></i>
+                <div>
+                    <h3>Bespoke Monogramming & Made-to-Order Pieces</h3>
+                    <p>Every SCARLETÉ silhouette can be personalized with considered details, bespoke hardware and carefully selected finishes. Contact our team to discuss your vision.</p>
+                </div>
+            </section>
+
+        </div>
+
+        <section class="inquiry-panel">
+            <div class="inquiry-title">
+                <div>
+                    <span class="eyebrow">DIRECT CORRESPONDENCE</span>
+                    <h2>Send an Inquiry</h2>
+                </div>
+                <i data-lucide="mail"></i>
+            </div>
+
+            <form id="contact-form">
+                <div class="form-field">
+                    <label for="full-name">Full Name <span>*</span></label>
+                    <input type="text" id="full-name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="email">Email Address <span>*</span></label>
+                    <input type="email" id="email" placeholder="name@domain.com" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="inquiry">Inquiry Type</label>
+                        <select id="inquiry">
+                            <option>Custom Design Request</option>
+                            <option>Product Information</option>
+                            <option>Order Assistance</option>
+                            <option>Private Appointment</option>
+                            <option>Returns & Exchanges</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="preference">Preferred Contact</label>
+                        <select id="preference">
+                            <option>Email</option>
+                            <option>Telephone</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-field">
+                    <label for="message">Your Message <span>*</span></label>
+                    <textarea id="message" rows="6" placeholder="Tell us how we can assist you..." required></textarea>
+                </div>
+
+                <label class="consent">
+                    <input type="checkbox">
+                    Receive occasional updates about private collections and atelier announcements.
+                </label>
+
+                <button type="submit" class="btn inquiry-submit">
+                    SEND MESSAGE <i data-lucide="arrow-right"></i>
+                </button>
+
+                <p class="form-note" id="form-note">Our client advisors look forward to hearing from you.</p>
+            </form>
+        </section>
+
+    </div>
+</main>
+
+<section class="commitments">
+    <div class="container">
+        <div class="commitment-heading">
+            <span class="eyebrow">THE SCARLETÉ STANDARD</span>
+            <h2>Client Experience Commitments</h2>
+            <p>Every creation is accompanied by considered care and attentive service.</p>
+        </div>
+
+        <div class="commitment-grid">
+            <article>
+                <i data-lucide="package-check"></i>
+                <h3>Complimentary Delivery</h3>
+                <p>Thoughtful packaging and complimentary delivery on eligible orders.</p>
+            </article>
+
+            <article>
+                <i data-lucide="refresh-cw"></i>
+                <h3>Considered Returns</h3>
+                <p>Our team is available to guide you through eligible returns and exchanges.</p>
+            </article>
+
+            <article>
+                <i data-lucide="wrench"></i>
+                <h3>Leather Restoration</h3>
+                <p>Dedicated care guidance to help preserve your treasured pieces.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="contact-craft">
+    <div class="container contact-craft-grid">
+        <div>
+            <span class="eyebrow">MAISON PROVENANCE</span>
+            <h2>The Heritage of Hand-Stitched Excellence</h2>
+            <p>Behind every creation is a considered approach to craftsmanship. From carefully selected materials to precise finishing, every detail reflects the SCARLETÉ philosophy.</p>
+            <a href="about.html" class="text-link">DISCOVER OUR CRAFTSMANSHIP ↗</a>
+        </div>
+        <img src="assets/about-atelier.jpg">
+        <img src="assets/about-hardware.jpg">
+    </div>
+</section>
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div>
+                    <div class="footer-brand">SCARLETÉ</div>
+
+                    <p class="footer-about">
+                        SCARLETÉ celebrates timeless design, refined
+                        craftsmanship and the art of everyday elegance.
+                        Created for those who appreciate beauty in
+                        every detail.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>EXPLORE</h4>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">Our Story</a>
+                    <a href="collection.html">Collection</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+
+                <div class="footer-col">
+                    <h4>CLIENT CARE</h4>
+                    <a href="contact.html">Product Care</a>
+                    <a href="contact.html">Delivery</a>
+                    <a href="contact.html">Returns</a>
+                    <a href="contact.html">Customer Support</a>
+                </div>
+
+                <div class="footer-col">
+                    <h4>INFORMATION</h4>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Sustainability</a>
+                </div>
+
+                <div class="footer-col">
+                    <h4>THE SCARLETÉ CIRCLE</h4>
+
+                    <p>
+                        Receive exclusive updates, new collection
+                        launches and a little inspiration.
+                    </p>
+
+                    <form class="newsletter">
+                        <input
+                            type="email"
+                            placeholder="Your email address"
+                            required>
+
+                        <button type="submit" aria-label="Subscribe">
+                            <i data-lucide="arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <span>
+                    © 2025 SCARLETÉ. All rights reserved.
+                </span>
+
+                <div class="footer-social">
+                    <a href="#">Instagram</a>
+                    <a href="#">Pinterest</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    lucide.createIcons();
+
+    const form = document.getElementById("contact-form");
+    const note = document.getElementById("form-note");
+
+    form.addEventListener("submit", event => {
+        event.preventDefault();
+
+        const name = document.getElementById("full-name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const inquiry = document.getElementById("inquiry").value;
+        const message = document.getElementById("message").value.trim();
+
+        const subject = encodeURIComponent("SCARLETÉ Inquiry - " + inquiry);
+        const body = encodeURIComponent(
+            "Name: " + name +
+            "\nEmail: " + email +
+            "\nInquiry: " + inquiry +
+            "\n\nMessage:\n" + message
+        );
+
+        window.location.href =
+            "mailto:concierge@scarlete.com?subject=" + subject + "&body=" + body;
+
+        note.textContent = "Your email application is opening to send your inquiry.";
+    });
+});
+</script>
+
+</body>
+</html>

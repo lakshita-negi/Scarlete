@@ -1,0 +1,331 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection | SCARLETÉ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="nav-wrap">
+        <a href="index.html" class="brand">SCARLETÉ</a>
+
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            <i data-lucide="menu"></i>
+        </button>
+
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="collection.html" class="active">Collection</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="nav-tools">
+            <button aria-label="Search"><i data-lucide="search"></i></button>
+            <button aria-label="Wishlist"><i data-lucide="heart"></i></button>
+            <button class="cart-button" aria-label="Shopping bag">
+                <i data-lucide="shopping-bag"></i>
+                <span class="cart-count">0</span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<section class="collection-hero">
+    <span class="eyebrow">THE SCARLETÉ COLLECTION</span>
+    <h1>Made to Be <em>Noticed.</em></h1>
+    <p>Discover timeless silhouettes, considered details and statement pieces designed to become part of your story.</p>
+</section>
+
+<section class="collection-controls">
+    <div class="collection-filter">
+        <span>SILHOUETTE:</span>
+        <button class="filter-btn active" data-filter="all">ALL</button>
+        <button class="filter-btn" data-filter="tote">TOTES</button>
+        <button class="filter-btn" data-filter="shoulder">SHOULDER BAGS</button>
+        <button class="filter-btn" data-filter="crossbody">CROSSBODY</button>
+        <button class="filter-btn" data-filter="clutch">CLUTCHES</button>
+    </div>
+
+    <div class="collection-sort">
+        <label for="sort-products">SORT:</label>
+        <select id="sort-products">
+            <option value="featured">Curated Order</option>
+            <option value="low">Price: Low to High</option>
+            <option value="high">Price: High to Low</option>
+        </select>
+    </div>
+</section>
+
+<main class="collection-section">
+    <div class="collection-grid" id="collection-grid">
+
+        <article class="collection-card" data-category="tote" data-price="890">
+            <div class="collection-image">
+                <span class="product-number">01 — SIGNATURE</span>
+                <img src="assets/tote.jpg">
+                <button class="wishlist-btn" aria-label="Add to wishlist"><i data-lucide="heart"></i></button>
+            </div>
+            <div class="product-info">
+                <h3>Le Marais Structured Tote</h3>
+                <p>Deep Burgundy Calfskin Leather</p>
+                <strong>$890</strong>
+            </div>
+        </article>
+
+        <article class="collection-card" data-category="shoulder" data-price="640">
+            <div class="collection-image">
+                <span class="product-number">02</span>
+                <img src="assets/bag-2.jpg">
+                <button class="wishlist-btn" aria-label="Add to wishlist"><i data-lucide="heart"></i></button>
+            </div>
+            <div class="product-info">
+                <h3>L'Arc Mini Baguette</h3>
+                <p>Polished Leather with Gold Clasp</p>
+                <strong>$640</strong>
+            </div>
+        </article>
+
+        <article class="collection-card" data-category="crossbody" data-price="720">
+            <div class="collection-image">
+                <span class="product-number">03</span>
+                <img src="assets/crossbody.jpg">
+                <button class="wishlist-btn" aria-label="Add to wishlist"><i data-lucide="heart"></i></button>
+            </div>
+            <div class="product-info">
+                <h3>Vendôme Saddle Crossbody</h3>
+                <p>Cognac Brown Vegetable-Tanned Leather</p>
+                <strong>$720</strong>
+            </div>
+        </article>
+
+        <article class="collection-card" data-category="shoulder" data-price="780">
+            <div class="collection-image">
+                <span class="product-number">04</span>
+                <img src="assets/shoulder.jpg">
+                <button class="wishlist-btn" aria-label="Add to wishlist"><i data-lucide="heart"></i></button>
+            </div>
+            <div class="product-info">
+                <h3>Palais Flap Shoulder Bag</h3>
+                <p>Forest Green Smooth Leather</p>
+                <strong>$780</strong>
+            </div>
+        </article>
+
+        <article class="collection-card" data-category="tote" data-price="810">
+            <div class="collection-image">
+                <span class="product-number">05</span>
+                <img src="assets/crescent.jpg">
+                <button class="wishlist-btn" aria-label="Add to wishlist"><i data-lucide="heart"></i></button>
+            </div>
+            <div class="product-info">
+                <h3>Symphonie Crescent Hobo</h3>
+                <p>Warm Ivory Supple Nappa</p>
+                <strong>$810</strong>
+            </div>
+        </article>
+
+        <article class="collection-card" data-category="clutch" data-price="590">
+            <div class="collection-image">
+                <span class="product-number">06 — LIMITED</span>
+                <img src="assets/burgundy.jpg">
+                <button class="wishlist-btn" aria-label="Add to wishlist"><i data-lucide="heart"></i></button>
+            </div>
+            <div class="product-info">
+                <h3>Étoile Evening Minaudière</h3>
+                <p>Deep Burgundy Velvet & Brass</p>
+                <strong>$590</strong>
+            </div>
+        </article>
+
+        <article class="collection-card" data-category="shoulder" data-price="880">
+            <div class="collection-image">
+                <span class="product-number">07 — LIMITED</span>
+                <img src="assets/lv.jpg">
+                <button class="wishlist-btn" aria-label="Add to wishlist"><i data-lucide="heart"></i></button>
+            </div>
+            <div class="product-info">
+                <h3>LOUIS VUITTON - Pochette Metis East</h3>
+                <p>Soft White Gold Hardware</p>
+                <strong>$980</strong>
+            </div>
+        </article>
+
+        <article class="collection-card" data-category="tote" data-price="950">
+            <div class="collection-image">
+                <span class="product-number">08</span>
+                <img src="assets/red.jpeg">
+                <button class="wishlist-btn" aria-label="Add to wishlist"><i data-lucide="heart"></i></button>
+            </div>
+            <div class="product-info">
+                <h3>Dark red shoulder bag</h3>
+                <p>Dark Wine Leather</p>
+                <strong>$450</strong>
+            </div>
+        </article>
+
+    </div>
+
+    <p class="no-products" hidden>No pieces found in this category.</p>
+</main>
+
+<section class="styling-section">
+    <div class="container styling-grid">
+        <div>
+            <span class="eyebrow">BESPOKE CONCIERGE</span>
+            <h2>Private Styling <em>Consultations</em></h2>
+            <p>Discover a silhouette that speaks to your personal style. Our collection specialists are here to help you find your perfect companion.</p>
+            <a href="contact.html" class="btn">BOOK AN APPOINTMENT</a>
+        </div>
+        <div class="styling-image">
+            <img src="assets/download (1).jpg">
+        </div>
+    </div>
+</section>
+
+<section class="collection-cta">
+    <span class="eyebrow">THE SCARLETÉ PROMISE</span>
+    <h2>Crafted for Generations.</h2>
+    <p>Discover a relationship with craftsmanship that goes beyond a season. Every SCARLETÉ silhouette is created to be treasured.</p>
+    <a href="about.html" class="btn btn-light">DISCOVER OUR STORY</a>
+</section>
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div>
+                    <div class="footer-brand">SCARLETÉ</div>
+
+                    <p class="footer-about">
+                        SCARLETÉ celebrates timeless design, refined
+                        craftsmanship and the art of everyday elegance.
+                        Created for those who appreciate beauty in
+                        every detail.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>EXPLORE</h4>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">Our Story</a>
+                    <a href="collection.html">Collection</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+
+                <div class="footer-col">
+                    <h4>CLIENT CARE</h4>
+                    <a href="contact.html">Product Care</a>
+                    <a href="contact.html">Delivery</a>
+                    <a href="contact.html">Returns</a>
+                    <a href="contact.html">Customer Support</a>
+                </div>
+
+                <div class="footer-col">
+                    <h4>INFORMATION</h4>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Sustainability</a>
+                </div>
+
+                <div class="footer-col">
+                    <h4>THE SCARLETÉ CIRCLE</h4>
+
+                    <p>
+                        Receive exclusive updates, new collection
+                        launches and a little inspiration.
+                    </p>
+
+                    <form class="newsletter">
+                        <input
+                            type="email"
+                            placeholder="Your email address"
+                            required>
+
+                        <button type="submit" aria-label="Subscribe">
+                            <i data-lucide="arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <span>
+                    © 2025 SCARLETÉ. All rights reserved.
+                </span>
+
+                <div class="footer-social">
+                    <a href="#">Instagram</a>
+                    <a href="#">Pinterest</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    lucide.createIcons();
+
+    const grid = document.getElementById("collection-grid");
+    const cards = [...grid.querySelectorAll(".collection-card")];
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    const sortSelect = document.getElementById("sort-products");
+    const noProducts = document.querySelector(".no-products");
+
+    let currentFilter = "all";
+
+    function updateProducts() {
+        cards.forEach(card => {
+            card.hidden = currentFilter !== "all" &&
+                card.dataset.category !== currentFilter;
+        });
+
+        const visible = cards.filter(card => !card.hidden);
+        const sort = sortSelect.value;
+
+        visible.sort((a, b) => {
+            if (sort === "low") return Number(a.dataset.price) - Number(b.dataset.price);
+            if (sort === "high") return Number(b.dataset.price) - Number(a.dataset.price);
+            return cards.indexOf(a) - cards.indexOf(b);
+        });
+
+        visible.forEach(card => grid.appendChild(card));
+        noProducts.hidden = visible.length !== 0;
+    }
+
+    filterButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            filterButtons.forEach(item => item.classList.remove("active"));
+            button.classList.add("active");
+            currentFilter = button.dataset.filter;
+            updateProducts();
+        });
+    });
+
+    sortSelect.addEventListener("change", updateProducts);
+
+    document.querySelectorAll(".wishlist-btn").forEach(button => {
+        button.addEventListener("click", () => {
+            button.classList.toggle("selected");
+        });
+    });
+});
+</script>
+
+</body>
+</html>
